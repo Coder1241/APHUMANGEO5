@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>A website</title>
+    <style>
+        select {
+            margin: 0 auto;
+            display: block;
+            width: 200px;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        body{
+            background-color: lightblue;
+        }
+   
+    </style>
+</head>
+<body>
+    <h1>AP Human Geography</h1>
+    <select onchange="navigateToPage(this)">
+        <option>unit 1</option>
+        <option value="Vocabunit2.html">unit 2</option>
+        <option value="Vocabunit3.html">unit 3</option>
+        <option value="Vocabunit4.html">unit 4</option>
+        <option>unit 5</option>
+        <option>unit 6</option>
+        <option>unit 7</option>
+        <option>unit 8</option>
+    </select>
+    <script>
+        function navigateToPage(selectElement) {
+            var selectedValue = selectElement.value;
+            if (selectedValue) {
+                window.location.href = selectedValue
+            }
+        }
+    </script>
+</body>
+</html>
